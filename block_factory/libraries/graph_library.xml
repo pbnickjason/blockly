@@ -1,0 +1,171 @@
+<xml xmlns="http://www.w3.org/1999/xhtml"><block type="factory_base" id="BF|0Nd1JqD`ln-wfr$^E" deletable="false" movable="false" x="10" y="10">
+    <mutation connections="BOTH"></mutation>
+    <field name="NAME">graph_init</field>
+    <field name="INLINE">AUTO</field>
+    <field name="CONNECTIONS">BOTH</field>
+    <statement name="INPUTS">
+      <block type="input_dummy" id="Y9SHd_^eht{8}SowK)*i">
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id="8}Fjly-^*NqxMB!6q$j1">
+            <field name="TEXT">set</field>
+            <next>
+              <block type="field_variable" id="R,ILXR?I{*fiO%ti3XE]">
+                <field name="TEXT">graph</field>
+                <field name="FIELDNAME">NAME</field>
+                <next>
+                  <block type="field_static" id=",R`*{%L3JKCj-)^v}jui">
+                    <field name="TEXT">to Dataset</field>
+                    <next>
+                      <block type="field_input" id="mzN.Af:*}ZcCDmQm;iC4">
+                        <field name="TEXT">myData</field>
+                        <field name="FIELDNAME">DATASET</field>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="6YR~oIC4`fb%)SiYJ3m(" deletable="false" movable="false">
+        <field name="TEXT">Graph constructor</field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id=".OM63}kEV(3ck[.ze4rH" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="TOPTYPE">
+      <shadow type="type_null" id="I;-$).w%*d6)${2$@16A"></shadow>
+    </value>
+    <value name="BOTTOMTYPE">
+      <shadow type="type_null" id="OZ!65aC2*Z-%Ju![pchF"></shadow>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="q*SiP9c(6K-IqgxL.ZW_">
+        <mutation colour="#5b67a5"></mutation>
+        <field name="HUE">230</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id="BF|0Nd1JqD`ln-wfr$^E" deletable="false" movable="false" x="10" y="10">
+    <mutation connections="BOTH"></mutation>
+    <field name="NAME">graph_add</field>
+    <field name="INLINE">INT</field>
+    <field name="CONNECTIONS">BOTH</field>
+    <statement name="INPUTS">
+      <block type="input_value" id="w`1w;i4.bj`;`p=.qBIK">
+        <field name="INPUTNAME">X</field>
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_variable" id="@*Yz/g,5CvI+}mJD)gD*">
+            <field name="TEXT">graph</field>
+            <field name="FIELDNAME">NAME</field>
+            <next>
+              <block type="field_static" id="YB@4zwN3cg60IIGW;LkX">
+                <field name="TEXT">addData</field>
+              </block>
+            </next>
+          </block>
+        </statement>
+        <value name="TYPE">
+          <shadow type="type_null" id="^v:Uv=bY.2aeSXig%a@w"></shadow>
+          <block type="type_number" id="M?}6V-lP*|2Ql77e~}=i"></block>
+        </value>
+        <next>
+          <block type="input_value" id="k4yV9t]/Q4z#Jl]vp*%(">
+            <field name="INPUTNAME">Y</field>
+            <field name="ALIGN">LEFT</field>
+            <value name="TYPE">
+              <shadow type="type_null" id="(,s:cFgS3V*H0@o]T~lW"></shadow>
+              <block type="type_number" id="cy6mV*3j#pNKrwf]PD;J"></block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="6YR~oIC4`fb%)SiYJ3m(" deletable="false" movable="false">
+        <field name="TEXT">add data to graph</field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id=".OM63}kEV(3ck[.ze4rH" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="TOPTYPE">
+      <shadow type="type_null" id="$7($m^;L3q/EjH(6a/Ea"></shadow>
+    </value>
+    <value name="BOTTOMTYPE">
+      <shadow type="type_null" id="T4;vc.^F3@a!!/)w,(a,"></shadow>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="q*SiP9c(6K-IqgxL.ZW_">
+        <mutation colour="#5b67a5"></mutation>
+        <field name="HUE">230</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id="BF|0Nd1JqD`ln-wfr$^E" deletable="false" movable="false" x="10" y="10">
+    <mutation connections="BOTH"></mutation>
+    <field name="NAME">graph_get</field>
+    <field name="INLINE">INT</field>
+    <field name="CONNECTIONS">BOTH</field>
+    <statement name="INPUTS">
+      <block type="input_dummy" id="4;;Rkj=hV]`Og3HuajrM">
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_variable" id="tS)F1VdF2)G8LL}A$N[,">
+            <field name="TEXT">graph</field>
+            <field name="FIELDNAME">NAME</field>
+            <next>
+              <block type="field_static" id=")f34B0ie(K,*/y/KD,e?">
+                <field name="TEXT">getData</field>
+                <next>
+                  <block type="field_variable" id="UtDGq]WrXjMGu^Hk9_g0">
+                    <field name="TEXT">data</field>
+                    <field name="FIELDNAME">DATA</field>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+        <next>
+          <block type="input_statement" id="jzJcuPL#bw1*P!3EquJ^">
+            <field name="INPUTNAME">callback</field>
+            <field name="ALIGN">LEFT</field>
+            <value name="TYPE">
+              <shadow type="type_null" id="P!,~.cAj(2]$q0_+|W}2"></shadow>
+            </value>
+          </block>
+        </next>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="6YR~oIC4`fb%)SiYJ3m(" deletable="false" movable="false">
+        <field name="TEXT">Get graph data in callback function</field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id=".OM63}kEV(3ck[.ze4rH" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="TOPTYPE">
+      <shadow type="type_null" id="1|iEQ5mvmw=1[GVcA2]D"></shadow>
+    </value>
+    <value name="BOTTOMTYPE">
+      <shadow type="type_null" id="~^H-]{M^i+n97AQzSG%T"></shadow>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="q*SiP9c(6K-IqgxL.ZW_">
+        <mutation colour="#5b67a5"></mutation>
+        <field name="HUE">230</field>
+      </block>
+    </value>
+  </block></xml>

@@ -1,0 +1,25 @@
+<xml xmlns="http://www.w3.org/1999/xhtml" id="toolbox" style="display: none;">
+  <category name="Graph" colour="#805ba5">
+    <block type="graph_init">
+      <field name="NAME" id="?;YA*kHdc7n`-]AOz77)" variabletype="">graph</field>
+      <field name="DATASET">myData</field>
+    </block>
+    <block type="graph_add">
+      <field name="NAME" id="?;YA*kHdc7n`-]AOz77)" variabletype="">graph</field>
+      <value name="X">
+        <block type="math_number">
+          <field name="NUM">0</field>
+        </block>
+      </value>
+      <value name="Y">
+        <block type="math_number">
+          <field name="NUM">0</field>
+        </block>
+      </value>
+    </block>
+    <block type="graph_get">
+      <field name="NAME" id="?;YA*kHdc7n`-]AOz77)" variabletype="">graph</field>
+      <field name="DATA" id="(C=s~ac0kSb.(%y*phd)" variabletype="">data</field>
+    </block>
+  </category>
+</xml>

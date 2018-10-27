@@ -1,0 +1,13 @@
+<xml xmlns="http://www.w3.org/1999/xhtml" id="toolbox" style="display: none;">
+  <category name="Ultrasonic" colour="#5ba5a5">
+    <block type="ultrasonic_init">
+      <field name="NAME" id="B^_Hn*X2wG@{9|%4CA0%" variabletype="">ultrasonic</field>
+      <field name="LABEL">sonic1</field>
+      <field name="ECHO">14</field>
+      <field name="TRIGGER">15</field>
+    </block>
+    <block type="ultrasonic_distance">
+      <field name="NAME" id="B^_Hn*X2wG@{9|%4CA0%" variabletype="">ultrasonic</field>
+    </block>
+  </category>
+</xml>

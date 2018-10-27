@@ -1,0 +1,373 @@
+<xml xmlns="http://www.w3.org/1999/xhtml"><block type="factory_base" id="+%xbu#?/=^#JeVUJl4#o" deletable="false" movable="false" x="10" y="10">
+    <mutation connections="BOTH"></mutation>
+    <field name="NAME">rostopic_launchmove</field>
+    <field name="INLINE">AUTO</field>
+    <field name="CONNECTIONS">BOTH</field>
+    <statement name="INPUTS">
+      <block type="input_dummy" id="`PI~YN;gkydnr==G+K!t">
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id=":xnl9P!w.LqRCll/@57I">
+            <field name="TEXT">set</field>
+            <next>
+              <block type="field_variable" id="4+hC{?Th;1BHEfA([d1v">
+                <field name="TEXT">moveTopic</field>
+                <field name="FIELDNAME">NAME</field>
+                <next>
+                  <block type="field_static" id="Hscd7)$~9n]9f`H{dIRy">
+                    <field name="TEXT">to LaunchMove</field>
+                    <next>
+                      <block type="field_input" id="8]aQ^]Nm7%fw*nY4%4nv">
+                        <field name="TEXT">cmd_vel</field>
+                        <field name="FIELDNAME">TOPIC_NAME</field>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="U+Fv#R6VN~%O#.s-3X~7" deletable="false" movable="false">
+        <field name="TEXT">ROS move topic</field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="T|35J2R1TSMXagUQU{ZQ" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="TOPTYPE">
+      <shadow type="type_null" id="_(aKJ!MS_aX1j;Tvw-Cy"></shadow>
+    </value>
+    <value name="BOTTOMTYPE">
+      <shadow type="type_null" id=":.$U(`OY/}1=PnEF)9+$"></shadow>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="JrUu(K|v(5.B]sX{2]In">
+        <mutation colour="#5b67a5"></mutation>
+        <field name="HUE">230</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id="+%xbu#?/=^#JeVUJl4#o" deletable="false" movable="false" x="10" y="10">
+    <mutation connections="BOTH"></mutation>
+    <field name="NAME">rostopic_launchmove_publish</field>
+    <field name="INLINE">INT</field>
+    <field name="CONNECTIONS">BOTH</field>
+    <statement name="INPUTS">
+      <block type="input_value" id="N*^tcB2`j~5}7R(:Anw?">
+        <field name="INPUTNAME">LINEAR</field>
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_variable" id="4+hC{?Th;1BHEfA([d1v">
+            <field name="TEXT">moveTopic</field>
+            <field name="FIELDNAME">NAME</field>
+            <next>
+              <block type="field_static" id="Hscd7)$~9n]9f`H{dIRy">
+                <field name="TEXT">publish</field>
+              </block>
+            </next>
+          </block>
+        </statement>
+        <value name="TYPE">
+          <shadow type="type_null" id="){u!|lV_E-JxTJu=xM2?"></shadow>
+          <block type="type_number" id="v)vZ,0a9fhJ{vH0,0:c4"></block>
+        </value>
+        <next>
+          <block type="input_value" id="Xo35v`lM=V3Z_5)w^f5S">
+            <field name="INPUTNAME">ANGULAR</field>
+            <field name="ALIGN">LEFT</field>
+            <value name="TYPE">
+              <shadow type="type_null" id="WvL*q!?v]1D]zKt)GIj,"></shadow>
+              <block type="type_number" id="ET9bG@etu;Kt%Me^gom@"></block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="U+Fv#R6VN~%O#.s-3X~7" deletable="false" movable="false">
+        <field name="TEXT">publish to move topic</field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="T|35J2R1TSMXagUQU{ZQ" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="TOPTYPE">
+      <shadow type="type_null" id="_(aKJ!MS_aX1j;Tvw-Cy"></shadow>
+    </value>
+    <value name="BOTTOMTYPE">
+      <shadow type="type_null" id=":.$U(`OY/}1=PnEF)9+$"></shadow>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="JrUu(K|v(5.B]sX{2]In">
+        <mutation colour="#5b67a5"></mutation>
+        <field name="HUE">230</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id="+%xbu#?/=^#JeVUJl4#o" deletable="false" movable="false" x="10" y="10">
+    <mutation connections="BOTH"></mutation>
+    <field name="NAME">rostopic_launchmove_subscribe</field>
+    <field name="INLINE">AUTO</field>
+    <field name="CONNECTIONS">BOTH</field>
+    <statement name="INPUTS">
+      <block type="input_dummy" id="5Q$g^Hb#8nSpM,y~5uY,">
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_variable" id="4+hC{?Th;1BHEfA([d1v">
+            <field name="TEXT">moveTopic</field>
+            <field name="FIELDNAME">NAME</field>
+            <next>
+              <block type="field_static" id="Hscd7)$~9n]9f`H{dIRy">
+                <field name="TEXT">subscribe</field>
+              </block>
+            </next>
+          </block>
+        </statement>
+        <next>
+          <block type="input_dummy" id="Yoy_H5ErQ[0~wP$7uTik">
+            <field name="ALIGN">LEFT</field>
+            <statement name="FIELDS">
+              <block type="field_static" id="v;)pY6.K@gh2YuHaY}c|">
+                <field name="TEXT">message</field>
+                <next>
+                  <block type="field_variable" id="Y`go0r3!6ZnHkfXCSg2y">
+                    <field name="TEXT">linear</field>
+                    <field name="FIELDNAME">LINEAR</field>
+                    <next>
+                      <block type="field_variable" id="7cr]5V[OG8=xY}V~WOUb">
+                        <field name="TEXT">angular</field>
+                        <field name="FIELDNAME">ANGULAR</field>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </statement>
+            <next>
+              <block type="input_statement" id="z.1x3jyg-4kPhQ@7K;wk">
+                <field name="INPUTNAME">CALLBACK</field>
+                <field name="ALIGN">LEFT</field>
+                <value name="TYPE">
+                  <shadow type="type_null" id="D2DpwW2hiBEqU%r=jX2v"></shadow>
+                </value>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="U+Fv#R6VN~%O#.s-3X~7" deletable="false" movable="false">
+        <field name="TEXT">subscribe to messages from move topic</field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="T|35J2R1TSMXagUQU{ZQ" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="TOPTYPE">
+      <shadow type="type_null" id="_(aKJ!MS_aX1j;Tvw-Cy"></shadow>
+    </value>
+    <value name="BOTTOMTYPE">
+      <shadow type="type_null" id=":.$U(`OY/}1=PnEF)9+$"></shadow>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="JrUu(K|v(5.B]sX{2]In">
+        <mutation colour="#5b67a5"></mutation>
+        <field name="HUE">230</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id="+%xbu#?/=^#JeVUJl4#o" deletable="false" movable="false" x="10" y="10">
+    <mutation connections="BOTH"></mutation>
+    <field name="NAME">rostopic_launchio</field>
+    <field name="INLINE">AUTO</field>
+    <field name="CONNECTIONS">BOTH</field>
+    <statement name="INPUTS">
+      <block type="input_dummy" id="`PI~YN;gkydnr==G+K!t">
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id=":xnl9P!w.LqRCll/@57I">
+            <field name="TEXT">set</field>
+            <next>
+              <block type="field_variable" id="4+hC{?Th;1BHEfA([d1v">
+                <field name="TEXT">ioTopic</field>
+                <field name="FIELDNAME">NAME</field>
+                <next>
+                  <block type="field_static" id="Hscd7)$~9n]9f`H{dIRy">
+                    <field name="TEXT">to LaunchIO</field>
+                    <next>
+                      <block type="field_input" id="8]aQ^]Nm7%fw*nY4%4nv">
+                        <field name="TEXT">digitalRead/0</field>
+                        <field name="FIELDNAME">TOPIC_NAME</field>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </next>
+          </block>
+        </statement>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="U+Fv#R6VN~%O#.s-3X~7" deletable="false" movable="false">
+        <field name="TEXT">ROS io topic</field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="T|35J2R1TSMXagUQU{ZQ" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="TOPTYPE">
+      <shadow type="type_null" id="_(aKJ!MS_aX1j;Tvw-Cy"></shadow>
+    </value>
+    <value name="BOTTOMTYPE">
+      <shadow type="type_null" id=":.$U(`OY/}1=PnEF)9+$"></shadow>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="JrUu(K|v(5.B]sX{2]In">
+        <mutation colour="#5b67a5"></mutation>
+        <field name="HUE">230</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id="+%xbu#?/=^#JeVUJl4#o" deletable="false" movable="false" x="10" y="10">
+    <mutation connections="BOTH"></mutation>
+    <field name="NAME">rostopic_launchio_publish</field>
+    <field name="INLINE">INT</field>
+    <field name="CONNECTIONS">BOTH</field>
+    <statement name="INPUTS">
+      <block type="input_value" id="N*^tcB2`j~5}7R(:Anw?">
+        <field name="INPUTNAME">PIN</field>
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_variable" id="4+hC{?Th;1BHEfA([d1v">
+            <field name="TEXT">ioTopic</field>
+            <field name="FIELDNAME">NAME</field>
+            <next>
+              <block type="field_static" id="Hscd7)$~9n]9f`H{dIRy">
+                <field name="TEXT">publish</field>
+              </block>
+            </next>
+          </block>
+        </statement>
+        <value name="TYPE">
+          <shadow type="type_null" id="){u!|lV_E-JxTJu=xM2?"></shadow>
+          <block type="type_number" id="v)vZ,0a9fhJ{vH0,0:c4"></block>
+        </value>
+        <next>
+          <block type="input_value" id="Xo35v`lM=V3Z_5)w^f5S">
+            <field name="INPUTNAME">VALUE</field>
+            <field name="ALIGN">LEFT</field>
+            <value name="TYPE">
+              <shadow type="type_null" id="WvL*q!?v]1D]zKt)GIj,"></shadow>
+              <block type="type_number" id="ET9bG@etu;Kt%Me^gom@"></block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="U+Fv#R6VN~%O#.s-3X~7" deletable="false" movable="false">
+        <field name="TEXT">publish to io topic</field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="T|35J2R1TSMXagUQU{ZQ" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="TOPTYPE">
+      <shadow type="type_null" id="_(aKJ!MS_aX1j;Tvw-Cy"></shadow>
+    </value>
+    <value name="BOTTOMTYPE">
+      <shadow type="type_null" id=":.$U(`OY/}1=PnEF)9+$"></shadow>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="JrUu(K|v(5.B]sX{2]In">
+        <mutation colour="#5b67a5"></mutation>
+        <field name="HUE">230</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id="+%xbu#?/=^#JeVUJl4#o" deletable="false" movable="false" x="10" y="10">
+    <mutation connections="BOTH"></mutation>
+    <field name="NAME">rostopic_launchio_subscribe</field>
+    <field name="INLINE">AUTO</field>
+    <field name="CONNECTIONS">BOTH</field>
+    <statement name="INPUTS">
+      <block type="input_dummy" id="5Q$g^Hb#8nSpM,y~5uY,">
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_variable" id="4+hC{?Th;1BHEfA([d1v">
+            <field name="TEXT">ioTopic</field>
+            <field name="FIELDNAME">NAME</field>
+            <next>
+              <block type="field_static" id="Hscd7)$~9n]9f`H{dIRy">
+                <field name="TEXT">subscribe</field>
+              </block>
+            </next>
+          </block>
+        </statement>
+        <next>
+          <block type="input_dummy" id="Yoy_H5ErQ[0~wP$7uTik">
+            <field name="ALIGN">LEFT</field>
+            <statement name="FIELDS">
+              <block type="field_static" id="v;)pY6.K@gh2YuHaY}c|">
+                <field name="TEXT">message</field>
+                <next>
+                  <block type="field_variable" id="Y`go0r3!6ZnHkfXCSg2y">
+                    <field name="TEXT">pin</field>
+                    <field name="FIELDNAME">PIN</field>
+                    <next>
+                      <block type="field_variable" id="7cr]5V[OG8=xY}V~WOUb">
+                        <field name="TEXT">value</field>
+                        <field name="FIELDNAME">VALUE</field>
+                      </block>
+                    </next>
+                  </block>
+                </next>
+              </block>
+            </statement>
+            <next>
+              <block type="input_statement" id="z.1x3jyg-4kPhQ@7K;wk">
+                <field name="INPUTNAME">CALLBACK</field>
+                <field name="ALIGN">LEFT</field>
+                <value name="TYPE">
+                  <shadow type="type_null" id="D2DpwW2hiBEqU%r=jX2v"></shadow>
+                </value>
+              </block>
+            </next>
+          </block>
+        </next>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="U+Fv#R6VN~%O#.s-3X~7" deletable="false" movable="false">
+        <field name="TEXT">subscribe to messages from io topic</field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="T|35J2R1TSMXagUQU{ZQ" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="TOPTYPE">
+      <shadow type="type_null" id="_(aKJ!MS_aX1j;Tvw-Cy"></shadow>
+    </value>
+    <value name="BOTTOMTYPE">
+      <shadow type="type_null" id=":.$U(`OY/}1=PnEF)9+$"></shadow>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="JrUu(K|v(5.B]sX{2]In">
+        <mutation colour="#5b67a5"></mutation>
+        <field name="HUE">230</field>
+      </block>
+    </value>
+  </block></xml>

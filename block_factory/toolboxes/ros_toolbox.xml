@@ -1,0 +1,48 @@
+<xml xmlns="http://www.w3.org/1999/xhtml" id="toolbox" style="display: none;">
+  <category name="ROS" colour="#a55b5b">
+    <block type="rostopic_launchmove">
+      <field name="NAME" id="4+qMfYeQ%MH0$+gV@d7V" variabletype="">moveTopic</field>
+      <field name="TOPIC_NAME">cmd_vel</field>
+    </block>
+    <block type="rostopic_launchmove_publish">
+      <field name="NAME" id="4+qMfYeQ%MH0$+gV@d7V" variabletype="">moveTopic</field>
+      <value name="LINEAR">
+        <block type="math_number">
+          <field name="NUM">0</field>
+        </block>
+      </value>
+      <value name="ANGULAR">
+        <block type="math_number">
+          <field name="NUM">0</field>
+        </block>
+      </value>
+    </block>
+    <block type="rostopic_launchmove_subscribe">
+      <field name="NAME" id="4+qMfYeQ%MH0$+gV@d7V" variabletype="">moveTopic</field>
+      <field name="LINEAR" id="r2tO{nYf.Ju?w6h,2l{}" variabletype="">linear</field>
+      <field name="ANGULAR" id="57yNBU0i7:%L[?WApn[u" variabletype="">angular</field>
+    </block>
+    <block type="rostopic_launchio">
+      <field name="NAME" id="unBZ,/jcs#ss;![:MW:u" variabletype="">ioTopic</field>
+      <field name="TOPIC_NAME">digitalRead/0</field>
+    </block>
+    <block type="rostopic_launchio_publish">
+      <field name="NAME" id="unBZ,/jcs#ss;![:MW:u" variabletype="">ioTopic</field>
+      <value name="PIN">
+        <block type="math_number">
+          <field name="NUM">0</field>
+        </block>
+      </value>
+      <value name="VALUE">
+        <block type="math_number">
+          <field name="NUM">0</field>
+        </block>
+      </value>
+    </block>
+    <block type="rostopic_launchio_subscribe">
+      <field name="NAME" id="unBZ,/jcs#ss;![:MW:u" variabletype="">ioTopic</field>
+      <field name="PIN" id="@ADijaej*s`?mb4vtWl." variabletype="">pin</field>
+      <field name="VALUE" id="CmcY8cr_zM(XLv*;;riW" variabletype="">value</field>
+    </block>
+  </category>
+</xml>

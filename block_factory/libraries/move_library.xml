@@ -1,0 +1,377 @@
+<xml xmlns="http://www.w3.org/1999/xhtml"><block type="factory_base" id="$xzM+A}Of4N0Yn2B-t`E" deletable="false" movable="false" x="10" y="10">
+    <mutation connections="BOTH"></mutation>
+    <field name="NAME">ros_moveforward</field>
+    <field name="INLINE">INT</field>
+    <field name="CONNECTIONS">BOTH</field>
+    <statement name="INPUTS">
+      <block type="input_value" id="n1.7egO,bdUwSJ2UL21k">
+        <field name="INPUTNAME">speed</field>
+        <field name="ALIGN">RIGHT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id="(t*L-Q1,HP@c,BHvA,?j">
+            <field name="TEXT">moveForward</field>
+          </block>
+        </statement>
+        <value name="TYPE">
+          <shadow type="type_null" id="?s]66YZ-c8ei`gr!v.-W"></shadow>
+          <block type="type_number" id="Bvn+EKzb#W]f{*PU:5]*"></block>
+        </value>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="oZFfwiHN5%|dyEbI=[p[" deletable="false" movable="false">
+        <field name="TEXT">moves robot forward</field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="%TUilj1w(0],k5r#]D++" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="TOPTYPE">
+      <shadow type="type_null" id="~AVk,D3CB0N:XNDe[^tS"></shadow>
+    </value>
+    <value name="BOTTOMTYPE">
+      <shadow type="type_null" id="GPZgN$9R%l5mwP{J.3E!"></shadow>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="DJHLH6`F.RAh)1/o{Gi}">
+        <mutation colour="#a55b80"></mutation>
+        <field name="HUE">330</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id="hqTR+?f4_pWy**F5EbF*" deletable="false" movable="false" x="10" y="10">
+    <mutation connections="BOTH"></mutation>
+    <field name="NAME">ros_turnleft</field>
+    <field name="INLINE">INT</field>
+    <field name="CONNECTIONS">BOTH</field>
+    <statement name="INPUTS">
+      <block type="input_value" id="0?./xsDb-@xGLl`khaCF">
+        <field name="INPUTNAME">speed</field>
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id="ZP!~!?6{rViG:Uq*So^M">
+            <field name="TEXT">turnLeft</field>
+          </block>
+        </statement>
+        <value name="TYPE">
+          <shadow type="type_null" id="gMNzu}Q9%mK/d[=qhyjW"></shadow>
+          <block type="type_number" id="Z;H:h(%jsl3=g!ve]gWF"></block>
+        </value>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="|MP^s4]iX]X?=y`h?o)g" deletable="false" movable="false">
+        <field name="TEXT">Turns robot left</field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="gv`9XkgJDh*p@LN_H^Pf" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="TOPTYPE">
+      <shadow type="type_null" id="/{s5Fb9pew+P5!.FfwER"></shadow>
+    </value>
+    <value name="BOTTOMTYPE">
+      <shadow type="type_null" id="VIysmjT7gts32w{h6r-k"></shadow>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id=")JOY}=b${.].^V3kR`YJ">
+        <mutation colour="#a55b80"></mutation>
+        <field name="HUE">330</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id="hqTR+?f4_pWy**F5EbF*" deletable="false" movable="false" x="10" y="10">
+    <mutation connections="BOTH"></mutation>
+    <field name="NAME">ros_turnright</field>
+    <field name="INLINE">INT</field>
+    <field name="CONNECTIONS">BOTH</field>
+    <statement name="INPUTS">
+      <block type="input_value" id="0?./xsDb-@xGLl`khaCF">
+        <field name="INPUTNAME">speed</field>
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id="ZP!~!?6{rViG:Uq*So^M">
+            <field name="TEXT">turnRight</field>
+          </block>
+        </statement>
+        <value name="TYPE">
+          <shadow type="type_null" id="gMNzu}Q9%mK/d[=qhyjW"></shadow>
+          <block type="type_number" id="Z;H:h(%jsl3=g!ve]gWF"></block>
+        </value>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="|MP^s4]iX]X?=y`h?o)g" deletable="false" movable="false">
+        <field name="TEXT">Turns robot right</field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="gv`9XkgJDh*p@LN_H^Pf" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="TOPTYPE">
+      <shadow type="type_null" id="/{s5Fb9pew+P5!.FfwER"></shadow>
+    </value>
+    <value name="BOTTOMTYPE">
+      <shadow type="type_null" id="VIysmjT7gts32w{h6r-k"></shadow>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id=")JOY}=b${.].^V3kR`YJ">
+        <mutation colour="#a55b80"></mutation>
+        <field name="HUE">330</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id="hqTR+?f4_pWy**F5EbF*" deletable="false" movable="false" x="10" y="10">
+    <mutation connections="BOTH"></mutation>
+    <field name="NAME">ros_movebackward</field>
+    <field name="INLINE">INT</field>
+    <field name="CONNECTIONS">BOTH</field>
+    <statement name="INPUTS">
+      <block type="input_value" id="0?./xsDb-@xGLl`khaCF">
+        <field name="INPUTNAME">speed</field>
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id="ZP!~!?6{rViG:Uq*So^M">
+            <field name="TEXT">moveBackward</field>
+          </block>
+        </statement>
+        <value name="TYPE">
+          <shadow type="type_null" id="gMNzu}Q9%mK/d[=qhyjW"></shadow>
+          <block type="type_number" id="Z;H:h(%jsl3=g!ve]gWF"></block>
+        </value>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="|MP^s4]iX]X?=y`h?o)g" deletable="false" movable="false">
+        <field name="TEXT">moves robot backwards</field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="gv`9XkgJDh*p@LN_H^Pf" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="TOPTYPE">
+      <shadow type="type_null" id="/{s5Fb9pew+P5!.FfwER"></shadow>
+    </value>
+    <value name="BOTTOMTYPE">
+      <shadow type="type_null" id="VIysmjT7gts32w{h6r-k"></shadow>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id=")JOY}=b${.].^V3kR`YJ">
+        <mutation colour="#a55b80"></mutation>
+        <field name="HUE">330</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id="$xzM+A}Of4N0Yn2B-t`E" deletable="false" movable="false" x="10" y="10">
+    <mutation connections="BOTH"></mutation>
+    <field name="NAME">ros_moveforward_timed</field>
+    <field name="INLINE">INT</field>
+    <field name="CONNECTIONS">BOTH</field>
+    <statement name="INPUTS">
+      <block type="input_value" id="n1.7egO,bdUwSJ2UL21k">
+        <field name="INPUTNAME">speed</field>
+        <field name="ALIGN">RIGHT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id="(t*L-Q1,HP@c,BHvA,?j">
+            <field name="TEXT">moveForward</field>
+          </block>
+        </statement>
+        <value name="TYPE">
+          <shadow type="type_null" id="?s]66YZ-c8ei`gr!v.-W"></shadow>
+          <block type="type_number" id="Bvn+EKzb#W]f{*PU:5]*"></block>
+        </value>
+        <next>
+          <block type="input_value" id="X(g60/7ShH^Xy:;A~1ok">
+            <field name="INPUTNAME">time</field>
+            <field name="ALIGN">LEFT</field>
+            <value name="TYPE">
+              <shadow type="type_null" id="{8yo=5L2o]f@:_WAF6?L"></shadow>
+              <block type="type_number" id="I~@WS1uqwj4I1NdhvCiY"></block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="oZFfwiHN5%|dyEbI=[p[" deletable="false" movable="false">
+        <field name="TEXT">moves robot forward</field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="%TUilj1w(0],k5r#]D++" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="TOPTYPE">
+      <shadow type="type_null" id="~AVk,D3CB0N:XNDe[^tS"></shadow>
+    </value>
+    <value name="BOTTOMTYPE">
+      <shadow type="type_null" id="GPZgN$9R%l5mwP{J.3E!"></shadow>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id="DJHLH6`F.RAh)1/o{Gi}">
+        <mutation colour="#a55b80"></mutation>
+        <field name="HUE">330</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id="hqTR+?f4_pWy**F5EbF*" deletable="false" movable="false" x="10" y="10">
+    <mutation connections="BOTH"></mutation>
+    <field name="NAME">ros_turnleft_timed</field>
+    <field name="INLINE">INT</field>
+    <field name="CONNECTIONS">BOTH</field>
+    <statement name="INPUTS">
+      <block type="input_value" id="0?./xsDb-@xGLl`khaCF">
+        <field name="INPUTNAME">speed</field>
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id="ZP!~!?6{rViG:Uq*So^M">
+            <field name="TEXT">turnLeft</field>
+          </block>
+        </statement>
+        <value name="TYPE">
+          <shadow type="type_null" id="gMNzu}Q9%mK/d[=qhyjW"></shadow>
+          <block type="type_number" id="Z;H:h(%jsl3=g!ve]gWF"></block>
+        </value>
+        <next>
+          <block type="input_value" id="ht76=1!wnR~Yq]]2(RGr">
+            <field name="INPUTNAME">time</field>
+            <field name="ALIGN">LEFT</field>
+            <value name="TYPE">
+              <shadow type="type_null" id="hquOZ`.blGJar6UQse2i"></shadow>
+              <block type="type_number" id=".k-Oq;cum?q3{Zh!-v8h"></block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="|MP^s4]iX]X?=y`h?o)g" deletable="false" movable="false">
+        <field name="TEXT">Turns robot left</field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="gv`9XkgJDh*p@LN_H^Pf" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="TOPTYPE">
+      <shadow type="type_null" id="/{s5Fb9pew+P5!.FfwER"></shadow>
+    </value>
+    <value name="BOTTOMTYPE">
+      <shadow type="type_null" id="VIysmjT7gts32w{h6r-k"></shadow>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id=")JOY}=b${.].^V3kR`YJ">
+        <mutation colour="#a55b80"></mutation>
+        <field name="HUE">330</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id="hqTR+?f4_pWy**F5EbF*" deletable="false" movable="false" x="10" y="10">
+    <mutation connections="BOTH"></mutation>
+    <field name="NAME">ros_turnright_timed</field>
+    <field name="INLINE">INT</field>
+    <field name="CONNECTIONS">BOTH</field>
+    <statement name="INPUTS">
+      <block type="input_value" id="0?./xsDb-@xGLl`khaCF">
+        <field name="INPUTNAME">speed</field>
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id="ZP!~!?6{rViG:Uq*So^M">
+            <field name="TEXT">turnRight</field>
+          </block>
+        </statement>
+        <value name="TYPE">
+          <shadow type="type_null" id="gMNzu}Q9%mK/d[=qhyjW"></shadow>
+          <block type="type_number" id="Z;H:h(%jsl3=g!ve]gWF"></block>
+        </value>
+        <next>
+          <block type="input_value" id="ht76=1!wnR~Yq]]2(RGr">
+            <field name="INPUTNAME">time</field>
+            <field name="ALIGN">LEFT</field>
+            <value name="TYPE">
+              <shadow type="type_null" id="hquOZ`.blGJar6UQse2i"></shadow>
+              <block type="type_number" id=".k-Oq;cum?q3{Zh!-v8h"></block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="|MP^s4]iX]X?=y`h?o)g" deletable="false" movable="false">
+        <field name="TEXT">Turns robot right</field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="gv`9XkgJDh*p@LN_H^Pf" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="TOPTYPE">
+      <shadow type="type_null" id="/{s5Fb9pew+P5!.FfwER"></shadow>
+    </value>
+    <value name="BOTTOMTYPE">
+      <shadow type="type_null" id="VIysmjT7gts32w{h6r-k"></shadow>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id=")JOY}=b${.].^V3kR`YJ">
+        <mutation colour="#a55b80"></mutation>
+        <field name="HUE">330</field>
+      </block>
+    </value>
+  </block><block type="factory_base" id="hqTR+?f4_pWy**F5EbF*" deletable="false" movable="false" x="10" y="10">
+    <mutation connections="BOTH"></mutation>
+    <field name="NAME">ros_movebackward_timed</field>
+    <field name="INLINE">INT</field>
+    <field name="CONNECTIONS">BOTH</field>
+    <statement name="INPUTS">
+      <block type="input_value" id="0?./xsDb-@xGLl`khaCF">
+        <field name="INPUTNAME">speed</field>
+        <field name="ALIGN">LEFT</field>
+        <statement name="FIELDS">
+          <block type="field_static" id="ZP!~!?6{rViG:Uq*So^M">
+            <field name="TEXT">moveBackward</field>
+          </block>
+        </statement>
+        <value name="TYPE">
+          <shadow type="type_null" id="gMNzu}Q9%mK/d[=qhyjW"></shadow>
+          <block type="type_number" id="Z;H:h(%jsl3=g!ve]gWF"></block>
+        </value>
+        <next>
+          <block type="input_value" id="ht76=1!wnR~Yq]]2(RGr">
+            <field name="INPUTNAME">time</field>
+            <field name="ALIGN">LEFT</field>
+            <value name="TYPE">
+              <shadow type="type_null" id="hquOZ`.blGJar6UQse2i"></shadow>
+              <block type="type_number" id=".k-Oq;cum?q3{Zh!-v8h"></block>
+            </value>
+          </block>
+        </next>
+      </block>
+    </statement>
+    <value name="TOOLTIP">
+      <block type="text" id="|MP^s4]iX]X?=y`h?o)g" deletable="false" movable="false">
+        <field name="TEXT">moves robot backwards</field>
+      </block>
+    </value>
+    <value name="HELPURL">
+      <block type="text" id="gv`9XkgJDh*p@LN_H^Pf" deletable="false" movable="false">
+        <field name="TEXT"></field>
+      </block>
+    </value>
+    <value name="TOPTYPE">
+      <shadow type="type_null" id="/{s5Fb9pew+P5!.FfwER"></shadow>
+    </value>
+    <value name="BOTTOMTYPE">
+      <shadow type="type_null" id="VIysmjT7gts32w{h6r-k"></shadow>
+    </value>
+    <value name="COLOUR">
+      <block type="colour_hue" id=")JOY}=b${.].^V3kR`YJ">
+        <mutation colour="#a55b80"></mutation>
+        <field name="HUE">330</field>
+      </block>
+    </value>
+  </block></xml>
