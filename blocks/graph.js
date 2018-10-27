@@ -17,7 +17,7 @@ Blockly.defineBlocksWithJsonArray(
     },
     {
       "type": "field_input",
-      "name": "dataset",
+      "name": "DATASET",
       "text": "myData"
     }
   ],
@@ -65,7 +65,7 @@ Blockly.defineBlocksWithJsonArray(
     },
     {
       "type": "field_variable",
-      "name": "data",
+      "name": "DATA",
       "variable": "data"
     },
     {
@@ -73,7 +73,7 @@ Blockly.defineBlocksWithJsonArray(
     },
     {
       "type": "input_statement",
-      "name": "callback"
+      "name": "CALLBACK"
     }
   ],
   "inputsInline": true,

@@ -5,7 +5,7 @@ goog.require('Blockly.JavaScript');
 
 Blockly.JavaScript['graph_init'] = function(block) {
   var variable_name = Blockly.JavaScript.variableDB_.getName(block.getFieldValue('NAME'), Blockly.Variables.NAME_TYPE);
-  var text_dataset = block.getFieldValue('dataset');
+  var text_dataset = block.getFieldValue('DATASET');
   var code = 'var ' + variable_name + ' = new Graph(' + text_dataset + ');\n';
   return code;
 };
@@ -20,8 +20,8 @@ Blockly.JavaScript['graph_add'] = function(block) {
 
 Blockly.JavaScript['graph_get'] = function(block) {
   var variable_name = Blockly.JavaScript.variableDB_.getName(block.getFieldValue('NAME'), Blockly.Variables.NAME_TYPE);
-  var variable_data = Blockly.JavaScript.variableDB_.getName(block.getFieldValue('data'), Blockly.Variables.NAME_TYPE);
-  var statements_callback = Blockly.JavaScript.statementToCode(block, 'callback');
+  var variable_data = Blockly.JavaScript.variableDB_.getName(block.getFieldValue('DATA'), Blockly.Variables.NAME_TYPE);
+  var statements_callback = Blockly.JavaScript.statementToCode(block, 'CALLBACK');
   var code = variable_name + '.getData(' + 'function(' + variable_data + ') {\n' + statements_callback + '\n});\n';
   return code;
 };

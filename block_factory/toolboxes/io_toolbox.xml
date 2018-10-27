@@ -1,16 +1,16 @@
 <xml xmlns="http://www.w3.org/1999/xhtml" id="toolbox" style="display: none;">
   <category name="IO" colour="#a5a55b">
     <block type="io_pinmode">
-      <field name="mode_options">output</field>
+      <field name="MODE_OPTIONS">output</field>
     </block>
     <block type="io_digitalread"></block>
     <block type="io_digitalwrite">
-      <field name="value">high</field>
+      <field name="VALUE">high</field>
     </block>
     <block type="io_analogread"></block>
     <block type="io_analogwrite"></block>
     <block type="io_setservo">
-      <field name="servo">90</field>
+      <field name="SERVO">90</field>
     </block>
   </category>
 </xml>

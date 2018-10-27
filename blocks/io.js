@@ -5,8 +5,8 @@ goog.provide('Blockly.Blocks.io');  // Deprecated
 goog.require('Blockly.Blocks');
 goog.require('Blockly');
 
-Blockly.defineBlocksWithJsonArray([
-{
+Blockly.defineBlocksWithJsonArray(
+[{
   "type": "io_pinmode",
   "message0": "pinMode %1 %2",
   "args0": [
@@ -17,14 +17,14 @@ Blockly.defineBlocksWithJsonArray([
     },
     {
       "type": "field_dropdown",
-      "name": "mode_options",
+      "name": "MODE_OPTIONS",
       "options": [
         [
-          "INPUT",
+          "input",
           "0"
         ],
         [
-          "OUTPUT",
+          "output",
           "1"
         ]
       ]
@@ -102,14 +102,14 @@ Blockly.defineBlocksWithJsonArray([
     },
     {
       "type": "field_dropdown",
-      "name": "value",
+      "name": "VALUE",
       "options": [
         [
-          "LOW",
+          "low",
           "0"
         ],
         [
-          "HIGH",
+          "high",
           "1"
         ]
       ]
@@ -133,7 +133,7 @@ Blockly.defineBlocksWithJsonArray([
     },
     {
       "type": "field_angle",
-      "name": "servo",
+      "name": "SERVO",
       "angle": 90
     }
   ],

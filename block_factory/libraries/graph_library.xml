@@ -137,7 +137,7 @@
         </statement>
         <next>
           <block type="input_statement" id="jzJcuPL#bw1*P!3EquJ^">
-            <field name="INPUTNAME">callback</field>
+            <field name="INPUTNAME">CALLBACK</field>
             <field name="ALIGN">LEFT</field>
             <value name="TYPE">
               <shadow type="type_null" id="P!,~.cAj(2]$q0_+|W}2"></shadow>

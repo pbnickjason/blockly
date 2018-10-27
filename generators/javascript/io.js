@@ -5,7 +5,7 @@ goog.require('Blockly.JavaScript');
 
 Blockly.JavaScript['io_pinmode'] = function(block) {
   var value_pin = Blockly.JavaScript.valueToCode(block, 'PIN', Blockly.JavaScript.ORDER_ATOMIC);
-  var dropdown_mode_options = block.getFieldValue('mode_options');
+  var dropdown_mode_options = block.getFieldValue('MODE_OPTIONS');
   var code = 'pinMode(' + value_pin + ', ' + dropdown_mode_options + ');\n';
   return code;
 };
@@ -31,14 +31,14 @@ Blockly.JavaScript['io_analogwrite'] = function(block) {
 
 Blockly.JavaScript['io_digitalwrite'] = function(block) {
   var value_pin = Blockly.JavaScript.valueToCode(block, 'PIN', Blockly.JavaScript.ORDER_ATOMIC);
-  var dropdown_value = block.getFieldValue('value');
+  var dropdown_value = block.getFieldValue('VALUE');
   var code = 'digitalWrite(' + value_pin + ', ' + dropdown_value + ');\n';
   return code;
 };
 
 Blockly.JavaScript['io_setservo'] = function(block) {
   var value_pin = Blockly.JavaScript.valueToCode(block, 'PIN', Blockly.JavaScript.ORDER_ATOMIC);
-  var angle_servo = block.getFieldValue('servo');
+  var angle_servo = block.getFieldValue('SERVO');
   var code = 'setServo(' + value_pin + ', ' + angle_servo + ');\n';
   return code;
 };
