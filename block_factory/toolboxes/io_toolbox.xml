@@ -1,16 +1,54 @@
 <xml xmlns="http://www.w3.org/1999/xhtml" id="toolbox" style="display: none;">
   <category name="IO" colour="#a5a55b">
     <block type="io_pinmode">
-      <field name="MODE_OPTIONS">output</field>
+      <field name="MODE_OPTIONS">INPUT</field>
+      <value name="PIN">
+        <block type="math_number">
+          <field name="NUM">0</field>
+        </block>
+      </value>
     </block>
-    <block type="io_digitalread"></block>
+    <block type="io_digitalread">
+      <value name="PIN">
+        <block type="math_number">
+          <field name="NUM">0</field>
+        </block>
+      </value>
+    </block>
     <block type="io_digitalwrite">
-      <field name="VALUE">high</field>
+      <field name="VALUE">LOW</field>
+      <value name="PIN">
+        <block type="math_number">
+          <field name="NUM">0</field>
+        </block>
+      </value>
     </block>
-    <block type="io_analogread"></block>
-    <block type="io_analogwrite"></block>
+    <block type="io_analogread">
+      <value name="PIN">
+        <block type="math_number">
+          <field name="NUM">0</field>
+        </block>
+      </value>
+    </block>
+    <block type="io_analogwrite">
+      <value name="PIN">
+        <block type="math_number">
+          <field name="NUM">0</field>
+        </block>
+      </value>
+      <value name="VALUE">
+        <block type="math_number">
+          <field name="NUM">255</field>
+        </block>
+      </value>
+    </block>
     <block type="io_setservo">
       <field name="SERVO">90</field>
+      <value name="PIN">
+        <block type="math_number">
+          <field name="NUM">0</field>
+        </block>
+      </value>
     </block>
   </category>
 </xml>

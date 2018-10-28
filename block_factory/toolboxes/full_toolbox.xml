@@ -356,27 +356,133 @@
   <category name="Variables" colour="#A65C81" custom="VARIABLE"></category>
   <category name="Functions" colour="#9A5CA6" custom="PROCEDURE"></category>
   <category name="Move" colour="#a5805b">
-    <block type="ros_moveforward_timed"></block>
-    <block type="ros_turnleft_timed"></block>
-    <block type="ros_turnright_timed"></block>
-    <block type="ros_movebackward_timed"></block>
-    <block type="ros_moveforward"></block>
-    <block type="ros_turnleft"></block>
-    <block type="ros_turnright"></block>
-    <block type="ros_movebackward"></block>
+    <block type="ros_moveforward_timed">
+      <value name="speed">
+        <block type="math_number">
+          <field name="NUM">100</field>
+        </block>
+      </value>
+      <value name="time">
+        <block type="math_number">
+          <field name="NUM">1000</field>
+        </block>
+      </value>
+    </block>
+    <block type="ros_turnleft_timed">
+      <value name="speed">
+        <block type="math_number">
+          <field name="NUM">100</field>
+        </block>
+      </value>
+      <value name="time">
+        <block type="math_number">
+          <field name="NUM">1000</field>
+        </block>
+      </value>
+    </block>
+    <block type="ros_turnright_timed">
+      <value name="speed">
+        <block type="math_number">
+          <field name="NUM">100</field>
+        </block>
+      </value>
+      <value name="time">
+        <block type="math_number">
+          <field name="NUM">1000</field>
+        </block>
+      </value>
+    </block>
+    <block type="ros_movebackward_timed">
+      <value name="speed">
+        <block type="math_number">
+          <field name="NUM">100</field>
+        </block>
+      </value>
+      <value name="time">
+        <block type="math_number">
+          <field name="NUM">1000</field>
+        </block>
+      </value>
+    </block>
+    <block type="ros_moveforward">
+      <value name="speed">
+        <block type="math_number">
+          <field name="NUM">100</field>
+        </block>
+      </value>
+    </block>
+    <block type="ros_turnleft">
+      <value name="speed">
+        <block type="math_number">
+          <field name="NUM">100</field>
+        </block>
+      </value>
+    </block>
+    <block type="ros_turnright">
+      <value name="speed">
+        <block type="math_number">
+          <field name="NUM">100</field>
+        </block>
+      </value>
+    </block>
+    <block type="ros_movebackward">
+      <value name="speed">
+        <block type="math_number">
+          <field name="NUM">100</field>
+        </block>
+      </value>
+    </block>
   </category>
   <category name="IO" colour="#a5a55b">
     <block type="io_pinmode">
-      <field name="MODE_OPTIONS">output</field>
+      <field name="MODE_OPTIONS">INPUT</field>
+      <value name="PIN">
+        <block type="math_number">
+          <field name="NUM">0</field>
+        </block>
+      </value>
     </block>
-    <block type="io_digitalread"></block>
+    <block type="io_digitalread">
+      <value name="PIN">
+        <block type="math_number">
+          <field name="NUM">0</field>
+        </block>
+      </value>
+    </block>
     <block type="io_digitalwrite">
-      <field name="VALUE">high</field>
+      <field name="VALUE">LOW</field>
+      <value name="PIN">
+        <block type="math_number">
+          <field name="NUM">0</field>
+        </block>
+      </value>
     </block>
-    <block type="io_analogread"></block>
-    <block type="io_analogwrite"></block>
+    <block type="io_analogread">
+      <value name="PIN">
+        <block type="math_number">
+          <field name="NUM">0</field>
+        </block>
+      </value>
+    </block>
+    <block type="io_analogwrite">
+      <value name="PIN">
+        <block type="math_number">
+          <field name="NUM">0</field>
+        </block>
+      </value>
+      <value name="VALUE">
+        <block type="math_number">
+          <field name="NUM">255</field>
+        </block>
+      </value>
+    </block>
     <block type="io_setservo">
       <field name="SERVO">90</field>
+      <value name="PIN">
+        <block type="math_number">
+          <field name="NUM">0</field>
+        </block>
+      </value>
     </block>
   </category>
   <category name="Graph" colour="#805ba5">

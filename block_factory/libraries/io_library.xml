@@ -23,10 +23,10 @@
               <block type="field_dropdown" id="MaczXA`$_2)qhq`p)qdR">
                 <mutation options="[&quot;text&quot;,&quot;text&quot;]"></mutation>
                 <field name="FIELDNAME">MODE_OPTIONS</field>
-                <field name="USER0">input</field>
-                <field name="CPU0">0</field>
-                <field name="USER1">output</field>
-                <field name="CPU1">1</field>
+                <field name="USER0">INPUT</field>
+                <field name="CPU0">INPUT</field>
+                <field name="USER1">OUTPUT</field>
+                <field name="CPU1">OUTPUT</field>
               </block>
             </statement>
           </block>
@@ -212,10 +212,10 @@
               <block type="field_dropdown" id="_v0I;n6F?Iuj%[PwhG%t">
                 <mutation options="[&quot;text&quot;,&quot;text&quot;]"></mutation>
                 <field name="FIELDNAME">VALUE</field>
-                <field name="USER0">low</field>
-                <field name="CPU0">0</field>
-                <field name="USER1">high</field>
-                <field name="CPU1">1</field>
+                <field name="USER0">LOW</field>
+                <field name="CPU0">LOW</field>
+                <field name="USER1">HIGH</field>
+                <field name="CPU1">HIGH</field>
               </block>
             </statement>
           </block>

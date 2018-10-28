@@ -5,16 +5,20 @@ goog.provide('Blockly.Blocks.move');  // Deprecated
 goog.require('Blockly.Blocks');
 goog.require('Blockly');
 
-Blockly.defineBlocksWithJsonArray([
-{
+Blockly.defineBlocksWithJsonArray(
+[{
   "type": "ros_moveforward",
-  "message0": "moveForward %1",
+  "message0": "moveForward %1 %2",
   "args0": [
     {
       "type": "input_value",
       "name": "speed",
       "check": "Number",
       "align": "RIGHT"
+    },
+    {
+      "type": "input_statement",
+      "name": "CALLBACK"
     }
   ],
   "inputsInline": true,
@@ -26,12 +30,16 @@ Blockly.defineBlocksWithJsonArray([
 },
 {
   "type": "ros_turnleft",
-  "message0": "turnLeft %1",
+  "message0": "turnLeft %1 %2",
   "args0": [
     {
       "type": "input_value",
       "name": "speed",
       "check": "Number"
+    },
+    {
+      "type": "input_statement",
+      "name": "CALLBACK"
     }
   ],
   "inputsInline": true,
@@ -43,12 +51,16 @@ Blockly.defineBlocksWithJsonArray([
 },
 {
   "type": "ros_turnright",
-  "message0": "turnRight %1",
+  "message0": "turnRight %1 %2",
   "args0": [
     {
       "type": "input_value",
       "name": "speed",
       "check": "Number"
+    },
+    {
+      "type": "input_statement",
+      "name": "CALLBACK"
     }
   ],
   "inputsInline": true,
@@ -60,12 +72,16 @@ Blockly.defineBlocksWithJsonArray([
 },
 {
   "type": "ros_movebackward",
-  "message0": "moveBackward %1",
+  "message0": "moveBackward %1 %2",
   "args0": [
     {
       "type": "input_value",
       "name": "speed",
       "check": "Number"
+    },
+    {
+      "type": "input_statement",
+      "name": "CALLBACK"
     }
   ],
   "inputsInline": true,
@@ -77,7 +93,7 @@ Blockly.defineBlocksWithJsonArray([
 },
 {
   "type": "ros_moveforward_timed",
-  "message0": "moveForward %1 %2",
+  "message0": "moveForward %1 %2 %3",
   "args0": [
     {
       "type": "input_value",
@@ -89,6 +105,10 @@ Blockly.defineBlocksWithJsonArray([
       "type": "input_value",
       "name": "time",
       "check": "Number"
+    },
+    {
+      "type": "input_statement",
+      "name": "CALLBACK"
     }
   ],
   "inputsInline": true,
@@ -100,7 +120,7 @@ Blockly.defineBlocksWithJsonArray([
 },
 {
   "type": "ros_turnleft_timed",
-  "message0": "turnLeft %1 %2",
+  "message0": "turnLeft %1 %2 %3",
   "args0": [
     {
       "type": "input_value",
@@ -111,6 +131,10 @@ Blockly.defineBlocksWithJsonArray([
       "type": "input_value",
       "name": "time",
       "check": "Number"
+    },
+    {
+      "type": "input_statement",
+      "name": "CALLBACK"
     }
   ],
   "inputsInline": true,
@@ -122,7 +146,7 @@ Blockly.defineBlocksWithJsonArray([
 },
 {
   "type": "ros_turnright_timed",
-  "message0": "turnRight %1 %2",
+  "message0": "turnRight %1 %2 %3",
   "args0": [
     {
       "type": "input_value",
@@ -133,6 +157,10 @@ Blockly.defineBlocksWithJsonArray([
       "type": "input_value",
       "name": "time",
       "check": "Number"
+    },
+    {
+      "type": "input_statement",
+      "name": "CALLBACK"
     }
   ],
   "inputsInline": true,
@@ -144,7 +172,7 @@ Blockly.defineBlocksWithJsonArray([
 },
 {
   "type": "ros_movebackward_timed",
-  "message0": "moveBackward %1 %2",
+  "message0": "moveBackward %1 %2 %3",
   "args0": [
     {
       "type": "input_value",
@@ -155,6 +183,10 @@ Blockly.defineBlocksWithJsonArray([
       "type": "input_value",
       "name": "time",
       "check": "Number"
+    },
+    {
+      "type": "input_statement",
+      "name": "CALLBACK"
     }
   ],
   "inputsInline": true,

@@ -20,12 +20,12 @@ Blockly.defineBlocksWithJsonArray(
       "name": "MODE_OPTIONS",
       "options": [
         [
-          "input",
-          "0"
+          "INPUT",
+          "INPUT"
         ],
         [
-          "output",
-          "1"
+          "OUTPUT",
+          "OUTPUT"
         ]
       ]
     }
@@ -105,12 +105,12 @@ Blockly.defineBlocksWithJsonArray(
       "name": "VALUE",
       "options": [
         [
-          "low",
-          "0"
+          "LOW",
+          "LOW"
         ],
         [
-          "high",
-          "1"
+          "HIGH",
+          "HIGH"
         ]
       ]
     }

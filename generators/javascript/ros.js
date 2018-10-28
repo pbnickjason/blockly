@@ -6,7 +6,7 @@ goog.require('Blockly.JavaScript');
 Blockly.JavaScript['rostopic_launchmove'] = function(block) {
   var variable_name = Blockly.JavaScript.variableDB_.getName(block.getFieldValue('NAME'), Blockly.Variables.NAME_TYPE);
   var text_topic_name = block.getFieldValue('TOPIC_NAME');
-  var code = 'var ' + variable_name + ' = new LaunchMove(' + text_topic_name + ');\n';
+  var code = 'var ' + variable_name + ' = new LaunchMove("' + text_topic_name + '");\n';
   return code;
 };
 
@@ -23,14 +23,14 @@ Blockly.JavaScript['rostopic_launchmove_subscribe'] = function(block) {
   var variable_linear = Blockly.JavaScript.variableDB_.getName(block.getFieldValue('LINEAR'), Blockly.Variables.NAME_TYPE);
   var variable_angular = Blockly.JavaScript.variableDB_.getName(block.getFieldValue('ANGULAR'), Blockly.Variables.NAME_TYPE);
   var statements_callback = Blockly.JavaScript.statementToCode(block, 'CALLBACK');
-  var code = variable_name + '.subscribe(' + 'function(' + variable_linear + ', ' + variable_angular + ') {\n' + statements_callback + '\n});\n';
+  var code = variable_name + '.subscribe(' + 'function(' + variable_linear + ', ' + variable_angular + ') {\n' + statements_callback + '});\n';
   return code;
 };
 
 Blockly.JavaScript['rostopic_launchio'] = function(block) {
   var variable_name = Blockly.JavaScript.variableDB_.getName(block.getFieldValue('NAME'), Blockly.Variables.NAME_TYPE);
   var text_topic_name = block.getFieldValue('TOPIC_NAME');
-  var code = 'var ' + variable_name + ' = new LaunchIO(' + text_topic_name + ');\n';
+  var code = 'var ' + variable_name + ' = new LaunchIO("' + text_topic_name + '");\n';
   return code;
 };
 
@@ -47,6 +47,6 @@ Blockly.JavaScript['rostopic_launchio_subscribe'] = function(block) {
   var variable_pin = Blockly.JavaScript.variableDB_.getName(block.getFieldValue('PIN'), Blockly.Variables.NAME_TYPE);
   var variable_value = Blockly.JavaScript.variableDB_.getName(block.getFieldValue('VALUE'), Blockly.Variables.NAME_TYPE);
   var statements_callback = Blockly.JavaScript.statementToCode(block, 'CALLBACK');
-  var code = variable_name + '.subscribe(' + 'function(' + variable_pin + ', ' + variable_value + ') {\n' + statements_callback + '\n});\n';
+  var code = variable_name + '.subscribe(' + 'function(' + variable_pin + ', ' + variable_value + ') {\n' + statements_callback + '});\n';
   return code;
 };

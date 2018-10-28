@@ -1,12 +1,80 @@
 <xml xmlns="http://www.w3.org/1999/xhtml" id="toolbox" style="display: none;">
   <category name="Move" colour="#a5805b">
-    <block type="ros_moveforward_timed"></block>
-    <block type="ros_turnleft_timed"></block>
-    <block type="ros_turnright_timed"></block>
-    <block type="ros_movebackward_timed"></block>
-    <block type="ros_moveforward"></block>
-    <block type="ros_turnleft"></block>
-    <block type="ros_turnright"></block>
-    <block type="ros_movebackward"></block>
+    <block type="ros_moveforward_timed">
+      <value name="speed">
+        <block type="math_number">
+          <field name="NUM">100</field>
+        </block>
+      </value>
+      <value name="time">
+        <block type="math_number">
+          <field name="NUM">1000</field>
+        </block>
+      </value>
+    </block>
+    <block type="ros_turnleft_timed">
+      <value name="speed">
+        <block type="math_number">
+          <field name="NUM">100</field>
+        </block>
+      </value>
+      <value name="time">
+        <block type="math_number">
+          <field name="NUM">1000</field>
+        </block>
+      </value>
+    </block>
+    <block type="ros_turnright_timed">
+      <value name="speed">
+        <block type="math_number">
+          <field name="NUM">100</field>
+        </block>
+      </value>
+      <value name="time">
+        <block type="math_number">
+          <field name="NUM">1000</field>
+        </block>
+      </value>
+    </block>
+    <block type="ros_movebackward_timed">
+      <value name="speed">
+        <block type="math_number">
+          <field name="NUM">100</field>
+        </block>
+      </value>
+      <value name="time">
+        <block type="math_number">
+          <field name="NUM">1000</field>
+        </block>
+      </value>
+    </block>
+    <block type="ros_moveforward">
+      <value name="speed">
+        <block type="math_number">
+          <field name="NUM">100</field>
+        </block>
+      </value>
+    </block>
+    <block type="ros_turnleft">
+      <value name="speed">
+        <block type="math_number">
+          <field name="NUM">100</field>
+        </block>
+      </value>
+    </block>
+    <block type="ros_turnright">
+      <value name="speed">
+        <block type="math_number">
+          <field name="NUM">100</field>
+        </block>
+      </value>
+    </block>
+    <block type="ros_movebackward">
+      <value name="speed">
+        <block type="math_number">
+          <field name="NUM">100</field>
+        </block>
+      </value>
+    </block>
   </category>
 </xml>
